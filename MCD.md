@@ -1,0 +1,27 @@
+APPARTIENT A, 11 RECRUTEUR, 1N ENTREPRISE
+ENTREPRISE: nom
+EST DOMICILIE, 11 CANDIDAT, 1N ADRESSE, 11 ENTREPRISE
+ADRESSE: num rue, libellé rue, cp, ville, département
+POSSEDE, 11 CANDIDAT, 0N EXPERIENCE, 11 JOB
+EXPERIENCE: nombre années
+
+RECRUTEUR: nom, prénom, telephone
+APPARTIENT, 11 ENTREPRISE, 0N SECTEUR
+SECTEUR:nom
+CANDIDAT: nom, prénom, date de naissance, telephone, photo, cv, description, poste, portfolio, expérience
+VEUT, 1N CANDIDAT, ON CONTRAT, 11 JOB
+JOB: intitulé, description, expérience, statut
+
+PEUT ETRE, 0N USER, 11 RECRUTEUR, 11 CANDIDAT
+USER: email, password, Role
+VOULOIR, 11 CANDIDAT, 0N SALAIRE
+CONTRAT:type
+
+:::
+SALAIRE:tranche
+AVOIR COMME, 1N CANDIDAT, 0N TECHNOLOGIE, 1N JOB
+TECHNOLOGIE: nom
+
+INTERESSE PAR, 0N CANDIDAT, 0N JOB
+
+PROPOSE, 0N RECRUTEUR, 1N JOB
