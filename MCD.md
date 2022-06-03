@@ -1,27 +1,27 @@
-APPARTIENT A, 11 RECRUTEUR, 1N ENTREPRISE
-ENTREPRISE: nom
-EST DOMICILIE, 11 CANDIDAT, 1N ADRESSE, 11 ENTREPRISE
-ADRESSE: num rue, libellé rue, cp, ville, département
-POSSEDE, 11 CANDIDAT, 0N EXPERIENCE, 11 JOB
-EXPERIENCE: nombre années
+BELONGS TO, 11 RECRUITER, 1N COMPANY
+COMPANY: name
+IS DOMICILED, 11 CANDIDATE, 1N ADRESS, 11 COMPANY
+ADRESS: street number, street name, zip, city, department
+POSSESSES, 11 CANDIDATE, 0N EXPERIENCE, 11 JOB
+EXPERIENCE: years number
 
-RECRUTEUR: nom, prénom, telephone
-APPARTIENT, 11 ENTREPRISE, 0N SECTEUR
-SECTEUR:nom
-CANDIDAT: nom, prénom, date de naissance, telephone, photo, cv, description, poste, portfolio, expérience
-VEUT, 1N CANDIDAT, ON CONTRAT, 11 JOB
-JOB: intitulé, description, expérience, statut
+RECRUITER: last name, first name, phone number
+HAS, 11 COMPANY, 0N SECTOR
+SECTOR: name
+CANDIDATE: last name, first name, birth date, phone number, picture, resume, description, position held, portfolio, experience
+NEED, 1N CANDIDATE, ON CONTRACT, 11 JOB
+JOB: name, description, experience, status
 
-PEUT ETRE, 0N USER, 11 RECRUTEUR, 11 CANDIDAT
-USER: email, password, Role
-VOULOIR, 11 CANDIDAT, 0N SALAIRE
-CONTRAT:type
+MAY BE, 0N USER, 11 RECRUITER, 11 CANDIDATE
+USER: email, password, role
+WANT, 11 CANDIDATE, 0N SALARY
+CONTRACT:type
 
 :::
-SALAIRE:tranche
-AVOIR COMME, 1N CANDIDAT, 0N TECHNOLOGIE, 1N JOB
-TECHNOLOGIE: nom
+SALARY:slice
+HAVE, 1N CANDIDATE, 0N TECHNOLOGY, 1N JOB
+TECHNOLOGY: name
 
-INTERESSE PAR, 0N CANDIDAT, 0N JOB
+INTERESTED BY, 0N CANDIDATE, 0N JOB
 
-PROPOSE, 0N RECRUTEUR, 1N JOB
+OFFERS, 0N RECRUITER, 1N JOB
