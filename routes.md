@@ -2,17 +2,17 @@
 
 ## Routes de l'application
 
-| URL              | Méthode HTTP | Titre                  | Contenu                   |
-| ---------------- | ------------ | ---------------------- | ------------------------- |
-| `/`              | `GET`        | `Match-job Accueil`    |                           |
-| `/`              | `Post`       | `connexion`            | ------------------------- |
-| `/`              | `Post`       | `subscribe`            | ------------------------- |
-| `/legal-mention` | `GET`        | `Mentions-legals`      | legal mention             |
-| `/about`         | `GET`        | `A propos`             | read-more                 |
-| `/feedback`      | `feedback`   | `Retour d'expériences` | share your feedback       |
-| `/feed`          | `GET`        | `feed`                 |                           |
-| `/profile`       | `GET`        | `profile`              | personal area             |
-| `/profile/edit`  | `POST`       | `edit`                 | change your profile       |
+| URL                 | Méthode HTTP | Titre                  | Contenu                   |
+| ------------------- | ------------ | ---------------------- | ------------------------- |
+| `/`                 | `GET`        | `Match-job Accueil`    |                           |
+| `/`                 | `Post`       | `connexion`            | ------------------------- |
+| `/`                 | `Post`       | `subscribe`            | ------------------------- |
+| `/mentions-legales` | `GET`        | `Mentions-legals`      | legal mention             |
+| `/a-propos`         | `GET`        | `A propos`             | read-more                 |
+| `/retours`          | `feedback`   | `Retour d'expériences` | share your feedback       |
+| `/fil`              | `GET`        | `feed`                 |                           |
+| `/profil`           | `GET`        | `profile`              | personal area             |
+| `/profil/edition`   | `POST`       | `edit`                 | change your profile       |
 
 ## Routes BackOffice
 
