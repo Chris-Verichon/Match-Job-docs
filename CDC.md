@@ -1,6 +1,6 @@
 # Match Job
 
-## Cachier des charges
+## Cahier des charges
 
 ### Présentation du projet
 
@@ -14,12 +14,12 @@ Dans un monde de plus en plus actif ou le temps est précieux, ... Match Job va 
 
 ### Le pubic ciblé
 
-Spécialisé dans le métier du développement web.
+Spécialisé dans les métiers du développement web.
 
 ### Les fonctionnalités du projet MVP
 
 Pour le Minimum viable projet il faudra une connection utilisateur (candidats / entreprises), qui amènera à une page édité son profil.
-Une fois fois le profil complété on à accès à un slider sous forme de carte de résumer de profil de candidats si on est une entreprise et inversement.
+Une fois le profil complété on à accès à un slider sous forme de carte de résumer de profil de candidats si on est une entreprise et inversement.
 Que l'on peut like ou dislike en fonction de notre choix.
 En cas de like pour l'utilisateur une notification sera mise dans une section qui s'appellera du même nom.
 En cas de like mutuel une notification apparaitra dans une section appeler "Match" qui donnera accès à des informations supplémentaires sur les deux parties en vue d'un premier contact IRL!
