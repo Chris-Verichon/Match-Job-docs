@@ -51,7 +51,7 @@
 |Champ|Type|Spécificités|Description|
 |-|-|-|-|
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant de l'entreprise|
-|name|VARCHAR(64)|NOT NULL|Le nom de l'entreprise|
+|company_name|VARCHAR(64)|NOT NULL|Le nom de l'entreprise|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de l'entreprise|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour de l'entreprise|
 |sector_id|entity|NULL|Le secteur d'activité (autre entité) de l'entreprise|
@@ -61,7 +61,7 @@
 |Champ|Type|Spécificités|Description|
 |-|-|-|-|
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant de l'offre|
-|name|VARCHAR(128)|NOT NULL|Le nom de l'offre|
+|job_name|VARCHAR(128)|NOT NULL|Le nom de l'offre|
 |description|LONGTEXT|NOT NULL|La description de l'offre|
 |statut|TINYINT|NOT NULL|Le statut de l'offre (0 pour active, 1 pour inactive/archivée)|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de l'offre|
@@ -75,16 +75,25 @@
 |Champ|Type|Spécificités|Description|
 |-|-|-|-|
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant du type de contrat|
-|name|VARCHAR(64)|NOT NULL|Le nom du type de contrat|
+|type|VARCHAR(64)|NOT NULL|Le nom du type de contrat|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création du type de contrat|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour du type de contrat|
+
+## Titre de l'emploi (`jobtitle`)
+
+|Champ|Type|Spécificités|Description|
+|-|-|-|-|
+|id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant du titre de l'emploi|
+|title|VARCHAR(64)|NOT NULL|L'intitulé du titre de l'emploi|
+|created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de la technologie|
+|updated_at|DATETIME|NULL|La date de la dernière mise à jour de la technologie|
 
 ## Type de technologie (`technology`)
 
 |Champ|Type|Spécificités|Description|
 |-|-|-|-|
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant de la technologie|
-|name|VARCHAR(64)|NOT NULL|Le nom de la technologie|
+|technology_name|VARCHAR(64)|NOT NULL|Le nom de la technologie|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de la technologie|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour de la technologie|
 
@@ -93,7 +102,7 @@
 |Champ|Type|Spécificités|Description|
 |-|-|-|-|
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant de la tranche de salaire|
-|name|VARCHAR(64)|NOT NULL|Le nom de la tranche de salaire|
+|slice|VARCHAR(64)|NOT NULL|Le nom de la tranche de salaire|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de la tranche de salaire|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour de la tranche de salaire|
 
@@ -111,6 +120,6 @@
 |Champ|Type|Spécificités|Description|
 |-|-|-|-|
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant du secteur d'activité|
-|name|VARCHAR(64)|NOT NULL|Le nom du secteur d'activité|
+|sector_name|VARCHAR(64)|NOT NULL|Le nom du secteur d'activité|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date du secteur d'activité|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour du secteur d'activité|
