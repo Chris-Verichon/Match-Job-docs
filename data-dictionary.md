@@ -10,17 +10,17 @@
 |birthday|TEXT|NULL|La description du personnage|
 |genre|TINYINT|NOT NULL|Le sexe du candidat (0 pour inconnu, 1 pour masculin, 2 pour féminin)|
 |phone_number|VARCHAR(10)|NULL|Le numéro de téléphone du candidat|
-|picture|VARCHAR(2083)|NULL|L'URL de la photo du candidat|
-|resume|VARCHAR(2083)|NULL|L'URL du CV du candidat|
+|picture|VARCHAR(255)|NULL|L'URL de la photo du candidat|
+|resume|VARCHAR(255)|NULL|L'URL du CV du candidat|
 |description|LONGTEXT|NULL|La description du candidat|
 |position_held|VARCHAR(128)|NULL|L'intitulé du poste souhaité|
-|portfolio|VARCHAR(2083)|NULL|L'URL du portfolio du candidat|
+|portfolio|VARCHAR(255)|NULL|L'URL du portfolio du candidat|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création du candidat|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour du candidat|
-|adress_id|entity|NULL|L'adresse (autre entité) du candidat|
-|experience_id|entity|NULL|Le niveau d'expérience (autre entité) du candidat|
-|salary_id|entity|NULL|La tranche de salaire (autre entité) du candidat|
-|user_id|entity|NOT NULL|L'utilisateur (autre entité) associé au candidat|
+|adress_id|entity|NULL, FOREIGN KEY|L'adresse (autre entité) du candidat|
+|experience_id|entity|NULL, FOREIGN KEY|Le niveau d'expérience (autre entité) du candidat|
+|salary_id|entity|NULL, FOREIGN KEY|La tranche de salaire (autre entité) du candidat|
+|user_id|entity|NOT NULL, FOREIGN KEY|L'utilisateur (autre entité) associé au candidat|
 
 ## Utilisateur (`user`)
 
@@ -29,7 +29,7 @@
 |id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant de l'utilisateur|
 |email|VARCHAR(180)|NOT NULL|L'adresse mail de l'utilisateur|
 |password|VARCHAR(255)|NOT NULL|le mot de passe de l'utilisateur|
-|roles|LONGTEXT|NOT NULL|le role de l'utilisateur|
+|roles|ENUM("candidat","recruiter", "admin")|NOT NULL|le role de l'utilisateur|
 |created_at|TIMESTAMP|DEFAULT CURRENT_TIMESTAMP|La date de création de l'utilisateur|
 |updated_at|TIMESTAMP|NULL|La date de la dernière mise à jour de l'utilisateur|
 
@@ -43,8 +43,8 @@
 |phone_number|VARCHAR(10)|NULL|Le numéro de téléphone du recruteur|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création du recruteur|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour du recruteur|
-|adress_id|entity|NULL|L'adresse (autre entité) du candidat|
-|company_id|entity|NULL|L'entreprise (autre entité) du recruteur|
+|adress_id|entity|NULL, FOREIGN KEY|L'adresse (autre entité) du candidat|
+|company_id|entity|NULL, FOREIGN KEY|L'entreprise (autre entité) du recruteur|
 
 ## Entreprise (`company`)
 
@@ -54,7 +54,7 @@
 |company_name|VARCHAR(64)|NOT NULL|Le nom de l'entreprise|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de l'entreprise|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour de l'entreprise|
-|sector_id|entity|NULL|Le secteur d'activité (autre entité) de l'entreprise|
+|sector_id|entity|NULL, FOREIGN KEY|Le secteur d'activité (autre entité) de l'entreprise|
 
 ## Offre d'emploi (`job`)
 
@@ -66,9 +66,9 @@
 |statut|TINYINT|NOT NULL|Le statut de l'offre (0 pour active, 1 pour inactive/archivée)|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date de création de l'offre|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour de l'offre|
-|experience_id|entity|NULL|Le niveau d'expérience (autre entité) pour l'offre|
-|contract_id|entity|NULL|Le type de contract (autre entité) pour l'offre|
-|salary_id|entity|NULL|La tranche de salaire (autre entité) pour l'offre|
+|experience_id|entity|NULL, FOREIGN KEY|Le niveau d'expérience (autre entité) pour l'offre|
+|contract_id|entity|NULL, FOREIGN KEY|Le type de contract (autre entité) pour l'offre|
+|salary_id|entity|NULL, FOREIGN KEY|La tranche de salaire (autre entité) pour l'offre|
 
 ## Type de contrat (`contract`)
 
@@ -134,6 +134,6 @@
 |match_status|TINYINT|NULL, UNSIGNED|Le statut du match (0 si pas de match 1 si match)|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date du secteur d'activité|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour du secteur d'activité|
-|job_id|entity|NULL|L'id du job (autre entité) pour le match|
-|candidate_id|entity|NULL|L'id du candidat (autre entité) pour le match|
-|recruiter_id|entity|NULL|L'id du recruteur (autre entité) pour le match|
+|job_id|entity|NULL, FOREIGN KEY|L'id du job (autre entité) pour le match|
+|candidate_id|entity|NULL, FOREIGN KEY|L'id du candidat (autre entité) pour le match|
+|recruiter_id|entity|NULL, FOREIGN KEY|L'id du recruteur (autre entité) pour le match|
