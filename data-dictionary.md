@@ -123,3 +123,17 @@
 |sector_name|VARCHAR(64)|NOT NULL|Le nom du secteur d'activité|
 |created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date du secteur d'activité|
 |updated_at|DATETIME|NULL|La date de la dernière mise à jour du secteur d'activité|
+
+## Match (`match`)
+
+|Champ|Type|Spécificités|Description|
+|-|-|-|-|
+|id|INT|PRIMARY KEY, NOT NULL, UNSIGNED, AUTO_INCREMENT|L'identifiant de match|
+|candidate_status|TINYINT|NULL, UNSIGNED|Le status du candidat (0 si pas de like 1 si like)|
+|recruiter_status|TINYINT|NULL, UNSIGNED|Le statut du recruiter (0 si pas de like 1 si like)|
+|match_status|TINYINT|NULL, UNSIGNED|Le statut du match (0 si pas de match 1 si match)|
+|created_at|DATETIME|NOT NULL, DEFAULT CURRENT_TIMESTAMP|La date du secteur d'activité|
+|updated_at|DATETIME|NULL|La date de la dernière mise à jour du secteur d'activité|
+|job_id|entity|NULL|L'id du job (autre entité) pour le match|
+|candidate_id|entity|NULL|L'id du candidat (autre entité) pour le match|
+|recruiter_id|entity|NULL|L'id du recruteur (autre entité) pour le match|
