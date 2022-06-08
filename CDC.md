@@ -10,7 +10,7 @@ L'application est basé sur un système de match avec une fonctionnalité intér
 
 ### Définition du besoin
 
-Dans un monde de plus en plus actif ou le temps est précieux, ... Match Job va permet aux Entreprises comme aux candidats, de faire correspondre et **matcher** leurs sprofiles en vu d'un processuces de recrutement accéléré.
+Dans un monde de plus en plus actif ou le temps est précieux, ... Match Job va permet aux Entreprises comme aux candidats, de faire correspondre et "**match**" leurs sprofiles en vu d'un processuces de recrutement accéléré.
 
 ### Le pubic ciblé
 
@@ -32,6 +32,7 @@ En cas de like mutuel une notification apparaitra dans une section appeler "Matc
 - Elargir le publique cible en intégrant des nouvelles catégories métiers
 - Mode prénium
 - App Mobile Android /IOS
+- Slider de feedback
 
 ### Liste des technologie
 
@@ -49,10 +50,10 @@ En cas de like mutuel une notification apparaitra dans une section appeler "Matc
 
 ### Navigateur compatible
 
-- Chrome
-- FireFox
-- Safari
-- Edge(bonus)
+- Chrome: 102.0.5005.63
+- FireFox: 101.0
+- Safari: 15.2
+- Edge(optionnel) : 102.0.1245.33
 
 ### Liste des Rôles de l'équipe
 
