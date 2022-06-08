@@ -1,5 +1,13 @@
 # User Stories
 
+## Visiteur
+
+| En tant que | Je veux                                                                    | Afin de (si besoin/nécessaire)                                     |
+| ----------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| visiteur    | pouvoir visualiser la page d'acceuil du site                                                     | accéder à la présentation du site                                |
+| visiteur    | pouvoir accéder aux mentions légales                                                     | -                                |
+| visiteur    | pouvoir me créer un compte                                                     | avoir un accès aux fonctionnaités du site                                |
+
 ## Candidat
 
 | En tant que | Je veux                                                                    | Afin de (si besoin/nécessaire)                                     |
