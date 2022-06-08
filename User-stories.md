@@ -14,7 +14,6 @@
 | ----------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | candidat    | pouvoir m'authentifier                                                     | accéder aux fonctionnalités du site                                |
 | candidat    | pouvoir me déconnecter                                                     | mettre fin à ma session                                            |
-| candidat    | pouvoir me créer un compte                                                 | avoir un accès aux fonctionnaités du site                          |
 | candidat    | pouvoir choisir l'affichage ou pas de ma photo de profil pour le recruteur | -                                                                  |
 | candidat    | pouvoir créer un profil                                                    | renseigner toutes les informations me concernant                   |
 | candidat    | pouvoir visualiser des offres correspondant à des critères                 | accéder intuitivement aux offres désirées                          |
@@ -39,7 +38,6 @@
 | ----------- | ------------------------------------------------------------- | ------------------------------------------------------ |
 | recruteur   | pouvoir m'authentifier                                        | accéder aux fonctionnalités du site                    |
 | recruteur   | pouvoir me déconnecter                                        | mettre fin à ma session                                |
-| recruteur   | pouvoir me créer un compte                                    | avoir un accès aux fonctionnaités du site              |
 | recruteur   | pouvoir visualiser des candidats correspondant à des critères | accéder intuitivement aux candidats désirées           |
 | recruteur   | pouvoir ajouter une offre                                     | proposer cette offre aux potentiels candidats          |
 | recruteur   | pouvoir désactiver une offre                                     | ne plus proposer cette offre aux potentiels candidats          |
