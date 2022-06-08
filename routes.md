@@ -9,7 +9,7 @@
 | `/`                 | `Post`       | `subscribe`            | ------------------------- |
 | `/mentions-legales` | `GET`        | `Mentions-legals`      | legal mention             |
 | `/a-propos`         | `GET`        | `A propos`             | read-more                 |
-| `/retours`          | `feedback`   | `Retour d'expériences` | share your feedback       |
+| `/avis`          | `feedback`   | `Retour d'expériences` | share your feedback       |
 | `/fil`              | `GET`        | `feed`                 |                           |
 | `/profil`           | `GET`        | `profile`              | personal area             |
 | `/profil/edition`   | `PATCH`       | `edit`                 | change your profile       |
@@ -29,11 +29,11 @@
 | `/back/contracts/delete`       | `DELETE`     | `Suppression d'un type de contrat`      | `message before remove a contract`       |
 | `/back/technologies`           | `GET`        | `Liste des technologies`                | `Technologies list`                      |
 | `/back/technologies/add`       | `POST`       | `Ajout d'une technologie`               | `Form to add a technology`               |
-| `/back/technologies/update`    | `POST`       | `Modification d'une technologie`        | `Form to update a technology`            |
+| `/back/technologies/update`    | `PUT`       | `Modification d'une technologie`        | `Form to update a technology`            |
 | `/back/technologies/delete`    | `DELETE`     | `Suppression d'une technologie`         | `message before remove a technology`     |
 | `/back/salary-brackets`        | `GET`        | `Liste des tranches de salaires`        | `Salary-brackets list`                   |
 | `/back/salary-brackets/add`    | `POST`       | `Ajout d'une tranche de salaire`        | `Form to add a salary-bracket`           |
-| `/back/salary-brackets/update` | `POST`       | `Modification d'une tranche de salaire` | `Form to update a salary-bracket`        |
+| `/back/salary-brackets/update` | `PUT`       | `Modification d'une tranche de salaire` | `Form to update a salary-bracket`        |
 | `/back/salary-brackets/delete` | `DELETE`     | `Suppression d'une tranche de salaire`  | `message before remove a salary-bracket` |
 | `/back/sectors`                | `GET`        | `liste des secteurs d'activités`        | `Sectors list`                           |
 | `/back/sectors/add`            | `POST`       | `Ajout d'un secteur d'activité`         | `Form to add a sector`                   |
